@@ -4,17 +4,22 @@ a trivial zabbix agent plugin to do remote ping time collection,
 somewhat inspired by smokeping
 
 
-# Zabbix Agent Setup
+## Zabbix Agent Setup
 
+
+### place the script
 copy this script to /opt/zabbix/bin/ping_time.sh
 and make it executable, you might need to fix selinux perms to make it run ok
 
+### configure the agent to call the script
+
 create a file on the/etc/zabbix/zabbix_agentd.conf.d/ping_time.conf containing this:
+
 ```
 UserParameter=custom.ping.time[*],/opt/zabbix/bin/ping_time.sh "$1" "$2"
 ```
 
-# Zabbix Server Setup
+## Zabbix Server Setup
 
 add an item to the host called e.g. "ping.time.myhost-3x"
 set the key with the host and the count, e.g. "custom.ping.time[myhost,3]"

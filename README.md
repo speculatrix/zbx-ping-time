@@ -3,6 +3,8 @@
 a trivial zabbix agent plugin to do remote ping time collection,
 somewhat inspired by smokeping
 
+![example_graph](https://raw.githubusercontent.com/speculatrix/zbx-ping-time/main/zabbix_ping_time_graph.png "example graph")
+
 
 ## Zabbix Agent Setup
 

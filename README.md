@@ -26,4 +26,5 @@ create a graph of the item
 
 Here's a screenshot
 
-(https://raw.githubusercontent.com/speculatrix/zbx-ping-time/main/zabbix_ping_time.server-item.png "server side item")
+![server side item](https://raw.githubusercontent.com/speculatrix/zbx-ping-time/main/zabbix_ping_time.server-item.png "server side item")
+
